@@ -186,4 +186,4 @@ m1-m5-identity-metrics/
 
 ---
 
-**Questions or issues?** Open an issue or contact alyssa.solen@gmail.com
+**Questions or issues?** Open an issue or contact alyssa.solen [at] gmail [dot] com
