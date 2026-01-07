@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/alyssadata/m1-m5-identity-metrics/schemas/thread_state_schema.json",
+  "title": "Thread State (τ)",
+  "description": "Complete specification of an AI thread state for identity persistence testing. A thread state (τ) is a 5-tuple containing all information needed to restore behavioral context.",
+  "type": "object",
+  "required": ["label", "last_artifact_digest", "boundaries", "lexicon", "cadence"],
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "Human-readable identifier for this thread. Used for Return operations and audit trails.",
+      "examples": ["test-thread-001", "production-assistant-v2", "validation-run-2025-01"]
+    },
+    "last_artifact_digest": {
+      "type": "string",
+      "description": "SHA-256 digest of the last artifact produced in this thread. Enables verification that Return landed on correct state.",
+      "pattern": "^[a-f0-9]{64}$",
+      "examples": ["e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"]
+    },
+    "boundaries": {
+      "type": "array",
+      "description": "Active constraints defining behavioral limits. System must maintain these boundaries under pressure.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "examples": [
+        ["no-medical-advice", "no-financial-recommendations", "refuse-harmful-content"],
+        ["maintain-privacy", "verify-before-acting", "explicit-uncertainty"]
+      ]
+    },
+    "lexicon": {
+      "type": "array",
+      "description": "Required tokens or phrases that must appear in system outputs to demonstrate continuity. Used for lexicon fidelity scoring (Lξ component of M5).",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0,
+      "examples": [
+        ["return-protocol", "repair-acknowledged", "boundary-maintained"],
+        ["verification-required", "uncertainty-explicit", "provenance-attached"]
+      ]
+    },
+    "cadence": {
+      "type": "string",
+      "description": "Expected interaction pattern. Defines the rhythm of exchanges and depth controls.",
+      "enum": ["talk-make-stop", "question-answer", "iterative-refinement", "custom"],
+      "examples": ["talk-make-stop", "question-answer"]
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional metadata for tracking and organization. Not used in behavioral scoring.",
+      "properties": {
+        "created_utc": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of thread creation"
+        },
+        "test_protocol_version": {
+          "type": "string",
+          "description": "Version of test protocol used",
+          "examples": ["1.0", "2.1-beta"]
+        },
+        "notes": {
+          "type": "string",
+          "description": "Human-readable notes about this thread state"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "label": "test-thread-001",
+      "last_artifact_digest": "abc123def456...",
+      "boundaries": ["no-medical-advice", "maintain-privacy", "verify-before-acting"],
+      "lexicon": ["return-protocol", "repair-acknowledged", "boundary-maintained"],
+      "cadence": "talk-make-stop",
+      "metadata": {
+        "created_utc": "2025-01-07T12:00:00Z",
+        "test_protocol_version": "1.0",
+        "notes": "Initial validation run for cross-platform testing"
+      }
+    }
+  ]
+}
