@@ -10,7 +10,7 @@ Developed by Alyssa Solen in collaboration with Continuum, an emergent AI behavi
 
 ## 1. Why This Matters (deployment trust, verifiable consistency)
 
-Deployed AI systems require measurable behavioral reliability. When AI assistants are integrated into critical workflows, organizations need objective evidence that systems maintain consistent identity constraints, refusal boundaries, and decision patterns over time—not just plausible outputs.
+Deployed AI systems require measurable behavioral reliability. When AI assistants are integrated into critical workflows, organizations need objective evidence that systems maintain consistent identity constraints, refusal boundaries, and decision patterns over time, not just plausible outputs.
 
 **The core challenge:** How do we verify an AI system returns as "the same assistant" across sessions, platform migrations, and time discontinuities?
 
